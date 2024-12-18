@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="https://cdn.iconscout.com/icon/free/png-256/free-livro-de-leitura-2130818-1794963.png" type="image/x-icon">
     <title>GuiLivros</title>
 </head>
 <body>
