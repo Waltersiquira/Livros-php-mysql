@@ -9,8 +9,8 @@
     <?php require_once 'includes/bankbook.php' ?>
     <table>
         <?php 
-        $il = $_GET['i'] ?? 1;
-        $busca = $bb->query("select * from livros as l join autores as a on l.autor = a.idautor where idlivro = '$il'");
+        $ia = $_GET['o'] ?? 1;
+        $busca = $bb->query("select * from autores where idautor = '$ia'");
         if (!$busca){
             echo 'erro';
         } else {
@@ -18,7 +18,7 @@
                 echo 'erro';
             } else {
                 while ($reg=$busca->fetch_object()){
-                    echo "<tr><td><img src='$reg->imagemlivro' width='130'></td><td>$reg->nome</td><td>$reg->descrição</td><td>editora: $reg->editora</td><td>gênero: $reg->gênero</td><td>autor: <a href='p2.php?o=$reg->idautor' style='text-decoration: none;'>$reg->nomeautor</a></td></tr>";
+                    echo "<tr><td><img src='$reg->imagemautor' width='130'></td><td>$reg->nomeautor</td><td>$reg->descriçãoautor</td></tr>";
                 }
             }
         }
