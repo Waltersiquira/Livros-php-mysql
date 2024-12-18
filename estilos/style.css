@@ -1,0 +1,62 @@
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Células da tabela */
+table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Imagens na tabela */
+table td img {
+    max-width: 130px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+/* Estilo para o título principal */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Linha horizontal */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px auto;
+    width: 80%;
+}
