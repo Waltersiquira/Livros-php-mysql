@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livros</title>
+    <title>GuiLivros</title>
 </head>
 <body>
     <?php require_once 'includes/bankbook.php' ?>
@@ -19,7 +19,7 @@
             echo 'erro';
         } else {
             while ($reg=$busca->fetch_object()){
-                echo "<tr><td><a href='p1.php?o=$reg->idlivro'><img src='$reg->imagemlivro' width='130'></a></td><td>$reg->nome</td></tr>";
+                echo "<tr><td><a href='p1.php?i=$reg->idlivro'><img src='$reg->imagemlivro' width='130'></a></td><td>$reg->nome</td></tr>";
             }
         }
     }
